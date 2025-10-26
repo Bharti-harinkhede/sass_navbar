@@ -1,0 +1,17 @@
+{
+  "name": "sass-setup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass-compile": "sass assets/sass/style.scss assets/css/style.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.6.2"
+  },
+  "devDependencies": {
+    "sass": "^1.93.2"
+  }
+}

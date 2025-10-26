@@ -1,0 +1,42 @@
+.navbar{
+    @include flex-center;
+    background-color: $bg-Color;
+    color:  $text-Color;
+    padding: 1rem;
+
+    .logo{
+        font-size: 1.5rem;
+    }
+}
+.nav-link{
+    list-style: none;
+    @include flex-center(space-between);
+    gap: 2rem;
+
+    a{
+        text-decoration: none;
+        color: $text-Color;
+        transition: all 0.3s;
+
+        &:hover{
+            color: $acc;
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+   .logo{
+    
+    margin-left: -70px;
+}
+    .nav-link{
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+}
